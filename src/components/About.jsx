@@ -10,7 +10,7 @@ function classNames(...classes) {
   }
   
 
-const About = ()=>{
+const About = ({isLight})=>{
     return(
         <section className="w-screen px-4">
             <div className="w-full flex flex-col justify-center items-center space-y-4">
@@ -59,7 +59,7 @@ const About = ()=>{
                 </div>
                 <div className="w-full">
                     <Tab.Group>
-                        <Tab.List className="w-full flex space-x-1 rounded-xl bg-secondary p-1.5">
+                        <Tab.List className={`w-full flex space-x-1 rounded-xl ${isLight? "bg-secondary" : "bg-alt-navy"} p-1.5`}>
                             <Tab className={({ selected }) =>
                                 classNames(
                                     'w-full flex items-center justify-center space-x-2 rounded-lg py-5 text-sm font-medium leading-5 text-blue-700',
