@@ -53,22 +53,22 @@ const About = ()=>{
             </div>
             <div className="w-full">
             <Tab.Group>
-                <Tab.List className="w-full flex space-x-1 rounded-xl bg-secondary p-1">
+                <Tab.List className="w-full flex space-x-1 rounded-xl bg-secondary p-1.5">
                     <Tab className={({ selected }) =>
                         classNames(
-                            'w-full flex items-center justify-center space-x-2 rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+                            'w-full flex items-center justify-center space-x-2 rounded-lg py-5 text-sm font-medium leading-5 text-blue-700',
                             'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
                             selected
                                 ? 'bg-white shadow'
                                 : ''
                         )
                     }>
-                        <Icon icon="fluent:certificate-24-filled" className="w-[20px] h-[20px]" />
+                        <Icon icon="fluent:certificate-24-regular" className="w-[20px] h-[20px]" />
                         <span className="text-[15px]">Skills</span>
                     </Tab>
                     <Tab className={({ selected }) =>
                         classNames(
-                            'w-full flex items-center justify-center space-x-2 rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+                            'w-full flex items-center justify-center space-x-2 rounded-lg py-5 text-sm font-medium leading-5 text-blue-700',
                             'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
                             selected
                                 ? 'bg-white shadow'
