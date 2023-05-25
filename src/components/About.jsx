@@ -30,7 +30,7 @@ const About = ()=>{
                 <div className="w-full flex justify-center space-x-4">
                     <div className="w-1/3 flex flex-col items-center">
                         <span>2</span>
-                        <span className="text-center">Years</span>
+                        <span className="text-center">Years of work</span>
                     </div>
                     <div className="w-1/3 flex flex-col items-center">
                         <span>+5</span>
@@ -42,13 +42,17 @@ const About = ()=>{
                     </div>
                 </div>
                 <div className="w-full flex space-x-2">
-                    <button className="w-[60%] border border-primary rounded-xl bg-primary text-white font-light flex items-center justify-center space-x-2 py-4 ">
-                        <Icon icon="charm:download" />
-                        Download CV
-                    </button>
-                    <button className="w-[20%] border border-secondary bg-secondary rounded-xl text-black font-light flex items-center justify-center space-x-2 py-4 ">
-                        <Icon icon="mdi:gmail" className="w-[26px] h-[26px]" />
-                    </button>
+                    <a href="https://drive.google.com/file/d/1QlLlx7AGLt6nPGxjU_-4IUrlFteNEndx/view?usp=sharing" target="_blank" className="w-[60%]">
+                        <button className="w-full border border-primary rounded-xl bg-primary text-white font-light flex items-center justify-center space-x-2 py-4 ">
+                            <Icon icon="charm:download" />
+                            Download CV
+                        </button>
+                    </a>    
+                    <a href="mailto:randy.buhendwa@gmail.com" className="w-[20%]">
+                        <button className="w-full border border-secondary bg-secondary rounded-xl text-black font-light flex items-center justify-center space-x-2 py-4 ">
+                            <Icon icon="mdi:gmail" className="w-[26px] h-[26px]" />
+                        </button>
+                    </a>    
                     <button className="w-[20%] border  border-secondary bg-secondary rounded-xl text-black font-light flex items-center justify-center space-x-2 py-4 ">
                         <Icon icon="bi:messenger" className="w-[20px] h-[20px]" />
                     </button>
