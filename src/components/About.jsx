@@ -21,10 +21,10 @@ const About = ()=>{
                     <h1 className="text-xl"><span className="font-bold">Randy Buhendwa</span></h1>
                     <h2 className="text-sm font-normal opacity-70">Web developer</h2>
                     <div className="flex space-x-4">
-                        <Icon icon="eva:github-outline" className="w-[26px] h-[26px]" />
-                        <Icon icon="bi:instagram" className="w-[26px] h-[26px]" />
-                        <Icon icon="uil:twitter-alt" className="w-[26px] h-[26px]" />
-                        <Icon icon="uil:linkedin-alt" className="w-[26px] h-[26px]" />
+                        <a href="https://github.com/creytas" target="_blank"><Icon icon="eva:github-outline" className="w-[26px] h-[26px]" /></a>
+                        <a href="https://instagram.com/creytas" target="_blank"><Icon icon="bi:instagram" className="w-[26px] h-[26px]" /></a>
+                        <a href="https://twitter.com/creytas" target="_blank"><Icon icon="uil:twitter-alt" className="w-[26px] h-[26px]" /></a>
+                        <a href="https://linkedin.com/in/creytas" target="_blank"><Icon icon="uil:linkedin-alt" className="w-[26px] h-[26px]" /></a>
                     </div>
                 </div>
                 <div className="w-full flex justify-center space-x-4">
