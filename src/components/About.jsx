@@ -60,25 +60,26 @@ const About = ({isLight})=>{
                 <div className="w-full">
                     <Tab.Group>
                         <Tab.List className={`w-full flex space-x-1 rounded-xl ${isLight? "bg-secondary" : "bg-alt-navy"} p-1.5`}>
-                            <Tab className={({ selected }) =>
+                            <Tab className={
+                                ({ selected }) =>
                                 classNames(
                                     'w-full flex items-center justify-center space-x-2 rounded-lg py-5 text-sm font-medium leading-5 text-blue-700',
                                     'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
-                                    selected
+                                    selected && isLight
                                         ? 'bg-white shadow'
-                                        : ''
-                                )
-                            }>
+                                        : selected && !isLight? 'bg-navy shadow':""
+                                )}>                            
                                 <Icon icon="fluent:certificate-24-regular" className="w-[20px] h-[20px]" />
                                 <span className="text-[15px]">Skills</span>
                             </Tab>
-                            <Tab className={({ selected }) =>
+                            <Tab className={
+                                ({ selected }) =>
                                 classNames(
                                     'w-full flex items-center justify-center space-x-2 rounded-lg py-5 text-sm font-medium leading-5 text-blue-700',
                                     'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
-                                    selected
+                                    selected && isLight
                                         ? 'bg-white shadow'
-                                        : ''
+                                        : selected && !isLight? 'bg-navy shadow':""
                                 )
                             }>
                                 <Icon icon="mi:computer" className="w-[20px] h-[20px]" />
