@@ -1,7 +1,6 @@
 import { Icon } from "@iconify/react"
 import Image from "next/image"
 import { Tab } from '@headlessui/react'
-import 'animate.css'
 import Skill from "./Skill"
 import Project from "./Project"
 

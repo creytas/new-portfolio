@@ -1,6 +1,5 @@
 import { Icon } from "@iconify/react"
 import Image from "next/image"
-import 'animate.css'
 
 const Project = ({projectImg, title, }) =>{
     return(
