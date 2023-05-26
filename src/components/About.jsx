@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react"
 import Image from "next/image"
 import { Tab } from '@headlessui/react'
+import 'animate.css'
 import Skill from "./Skill"
 import Project from "./Project"
 
@@ -21,10 +22,10 @@ const About = ({isLight})=>{
                     <h1 className="text-xl"><span className="font-bold">Randy Buhendwa</span></h1>
                     <h2 className="text-sm font-normal opacity-70">Web developer</h2>
                     <div className="flex space-x-4">
-                        <a href="https://github.com/creytas" target="_blank"><Icon icon="eva:github-outline" className="w-[26px] h-[26px]" /></a>
-                        <a href="https://instagram.com/creytas" target="_blank"><Icon icon="bi:instagram" className="w-[26px] h-[26px]" /></a>
-                        <a href="https://twitter.com/creytas" target="_blank"><Icon icon="uil:twitter-alt" className="w-[26px] h-[26px]" /></a>
-                        <a href="https://linkedin.com/in/creytas" target="_blank"><Icon icon="uil:linkedin-alt" className="w-[26px] h-[26px]" /></a>
+                        <a href="https://github.com/creytas" target="_blank" className="hover:scale-150 hover:text-primary"><Icon icon="eva:github-outline" className="w-[26px] h-[26px]" /></a>
+                        <a href="https://instagram.com/creytas" target="_blank" className="hover:scale-150 hover:text-primary"><Icon icon="bi:instagram" className="w-[26px] h-[26px]" /></a>
+                        <a href="https://twitter.com/creytas" target="_blank" className="hover:scale-150 hover:text-primary"><Icon icon="uil:twitter-alt" className="w-[26px] h-[26px]" /></a>
+                        <a href="https://linkedin.com/in/creytas" target="_blank" className="hover:scale-150 hover:text-primary"><Icon icon="uil:linkedin-alt" className="w-[26px] h-[26px]" /></a>
                     </div>
                 </div>
                 <div className="w-full flex justify-center space-x-4">
