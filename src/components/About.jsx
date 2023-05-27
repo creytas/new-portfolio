@@ -1,44 +1,6 @@
-import { Icon } from "@iconify/react"
-import Image from "next/image"
-import { Tab } from '@headlessui/react'
-import Skill from "./Skill"
-import Project from "./Project"
-
-
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-  }
-  
-
-const About = ({isLight})=>{
+const About = ({isLight}) =>{
     return(
         <section className="w-screen px-4">
-            <div className="w-full flex flex-col justify-center items-center space-y-4">
-                <div className="w-full flex flex-col items-center space-y-4  md:flex-row-reverse md:justify-center">
-                    <div className="w-[65%] flex items-center justify-center md:w-[271px] md:ml-8">
-                        <Image src="/profile_picture_1.png" alt="randy buhendwa's picture" width={560} height={560} loading="lazy"/>
-                    </div>
-                    <div className="flex flex-col justify-center items-center space-y-2 md:space-y-10">
-                        <h1 className="text-xl flex border md:space-x-2"><span className="md:border md:border-red hidden md:flex md:text-black md:text-[40px]">Hi, I’m</span><span className="md:border md:border-red font-bold md:text-[40px]">Randy Buhendwa</span></h1>
-                        <h2 className="text-sm font-normal opacity-70 md:text-[32px]">Web developer</h2>
-                        <p className="hidden md:flex md:w-[487px] md:font-light text-[21px] md:opacity-60">
-                            Passionate, creative and determined, I know how to carefully identify the needs of a client and provide adapted software solutions.
-                        </p>
-                        <div className="flex space-x-4 md:space-x-8">
-                            <a href="https://github.com/creytas" target="_blank" className="hover:scale-150 hover:text-primary"><Icon icon="eva:github-outline" className="w-[26px] h-[26px] md:w-[35px] md:h-[35px]" /></a>
-                            <a href="https://instagram.com/creytas" target="_blank" className="hover:scale-150 hover:text-primary"><Icon icon="bi:instagram" className="w-[26px] h-[26px] md:w-[35px] md:h-[35px]" /></a>
-                            <a href="https://twitter.com/creytas" target="_blank" className="hover:scale-150 hover:text-primary"><Icon icon="uil:twitter-alt" className="w-[26px] h-[26px] md:w-[35px] md:h-[35px]" /></a>
-                            <a href="https://linkedin.com/in/creytas" target="_blank" className="hover:scale-150 hover:text-primary"><Icon icon="uil:linkedin-alt" className="w-[26px] h-[26px] md:w-[35px] md:h-[35px]" /></a>
-                        </div>
-                        <a href="#" target="_blank" className="hidden md:flex md:w-[60%]">
-                            <button className="w-full border border-primary rounded-xl bg-primary text-white font-light flex items-center justify-center space-x-2 py-4 ">
-                                <Icon icon="clarity:briefcase-line" />
-                                Hire me
-                            </button>
-                        </a>                        
-                    </div>
-                </div>
-
                 <div className="w-full flex justify-center space-x-4">
                     <div className="w-1/3 flex flex-col items-center">
                         <span>2</span>
@@ -56,7 +18,7 @@ const About = ({isLight})=>{
                 <div className="w-full flex space-x-2">
                     <a href="https://drive.google.com/file/d/1QlLlx7AGLt6nPGxjU_-4IUrlFteNEndx/view?usp=sharing" target="_blank" className="w-[60%]">
                         <button className="w-full border border-primary rounded-xl bg-primary text-white font-light flex items-center justify-center space-x-2 py-4 ">
-                            <Icon icon="charm:download" />
+                            <Icon icon="charm:download" className="mr-2" />
                             Download CV
                         </button>
                     </a>    
@@ -144,8 +106,6 @@ const About = ({isLight})=>{
                         </Tab.Panels>
                     </Tab.Group>                
                 </div>
-            </div>
         </section>
-    )    
+    )
 }
-export default About
