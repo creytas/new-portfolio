@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Tab } from '@headlessui/react'
 import Skill from "./Skill"
 import Project from "./Project"
+import style from "../app/landing.module.css"
 
 
 function classNames(...classes) {
@@ -46,7 +47,7 @@ const Landing = ({isLight})=>{
                         <span className="text-[32px] opacity-70">Who Am I ?</span>
                     </h2>
                     <div className="w-full flex justify-center md:px-16">
-                        <div className="hidden md:flex md:w-[60%] md:h-[562px] md:relative ">
+                        <div className="hidden md:flex md:w-[55%] md:h-[562px] md:relative ">
                             <Image src="/profile_picture_2.jpg" fill className="rounded-xl"/>
                         </div>
                         <div className="w-full flex flex-col items-center md:space-y-8">
@@ -86,18 +87,55 @@ const Landing = ({isLight})=>{
                                     <button className="w-full border border-secondary bg-secondary rounded-xl text-black font-light flex items-center justify-center space-x-2 py-4 ">
                                         <Icon icon="mdi:gmail" className="w-[26px] h-[26px]" />
                                     </button>
-                                </a>    
-                                <button className="w-[20%] border  border-secondary bg-secondary rounded-xl text-black font-light flex items-center justify-center space-x-2 py-4 ">
-                                    <Icon icon="bi:messenger" className="w-[20px] h-[20px]" />
-                                </button>
+                                </a>
+                                <a href="tel:+243 822 561 854" className="w-[20%]">    
+                                    <button className="w-full border  border-secondary bg-secondary rounded-xl text-black font-light flex items-center justify-center space-x-2 py-4 ">
+                                        <Icon icon="majesticons:phone-dial" className="w-[24px] h-[24px]" />
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <div className="hidden md:w-screen md:flex md:bg-right  md:h-[304px] md:bg-[url('/footerMdBg.svg')] bg-no-repeat"></div>                
+                <div className="hidden md:w-screen md:flex md:bg-right  md:h-[304px] md:bg-[url('/footerMdBg.svg')] bg-no-repeat"></div>
+                <div className="hidden md:w-screen md:flex md:bg-left  md:h-[304px] md:bg-[url('/headerMdBg.svg')] bg-no-repeat"></div>                
+                <div className="hidden md:flex md:flex-col md:justify-center md:items-center md:space-y-10">
+                    <div className="w-screen flex justify-start px-16 border border-red">
+                        <h2 className="flex flex-col items-start">
+                            <span className="font-bold text-[40px]">Expertise</span>
+                            <span className="text-[32px] opacity-70">What Are My Skills ?</span>
+                        </h2>
+                    </div>
+                    <div className="w-screen flex px-16 border border-red">
+                        <div className="group w-96 h-96 [perspective:1000px]">
+                            <div className="relative w-full h-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                <div className={`absolute inset-0 space-y-4 rounded-xl flex flex-col items-center justify-center bg-[url('/shape.svg')] bg-primary/25`}>
+                                    <Icon icon="tabler:device-imac-cog" className="border w-[35%] h-[35%] text-white" />
+                                    <h3 className="border text-2xl text-white font-extrabold">UI/UX design</h3>
+                                </div>
+                                <div className="absolute inset-0 w-full h-full rounded-xl bg-white px-12 flex flex-col items-center justify-center text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                                    <h3 className="border">UI/UX design</h3>
+                                    <div className="w-full flex flex-wrap">
+                                        <Skill icon="akar-icons:html-fill" iconColor="#E44D26" skill="HTML" level="Advanced" />
+                                        <Skill icon="fa-brands:react" iconColor="#00D8FF" skill="React" level="Intermediate" />
+                                        <Skill icon="akar-icons:css-fill" iconColor="#264DE4" skill="CSS" level="Advanced" />
+                                        <Skill icon="akar-icons:bootstrap-fill" iconColor="#7E13F8" skill="Bootstrap" level="Advanced" />
+                                        <Skill icon="akar-icons:javascript-fill" iconColor="#F7DF1E" skill="JavaScript" level="Intermediate" />
+                                        <Skill icon="cib:redux" iconColor="#764ABC" skill="Redux" level="Advanced" />
+                                        <Skill icon="akar-icons:sass-fill" iconColor="#CD6799" skill="Sass" level="Basic" />
+                                        <Skill icon="logos:figma" iconColor="" skill="Figma" level="Intermediate" />
+                                        <Skill icon="devicon:tailwindcss" iconColor="#38BDF8" skill="Tailwind" level="Intermediate" />
+                                        <Skill icon="simple-icons:mui" iconColor="#007FFF" skill="MUI" level="intermediate" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <div className="w-full">
+                </div>
+
+                <div className="w-full flex flex-col md:hidden">
                     <Tab.Group>
                         <Tab.List className={`w-full flex space-x-1 rounded-xl ${isLight? "bg-secondary" : "bg-alt-navy"} p-1.5`}>
                             <Tab className={
