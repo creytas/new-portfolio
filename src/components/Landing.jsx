@@ -101,13 +101,13 @@ const Landing = ({isLight})=>{
                 <div className="hidden md:w-screen md:flex md:bg-right  md:h-[304px] md:bg-[url('/footerMdBg.svg')] bg-no-repeat"></div>
                 <div className="hidden md:w-screen md:flex md:bg-left  md:h-[304px] md:bg-[url('/headerMdBg.svg')] bg-no-repeat"></div>                
                 <div className="hidden md:flex md:flex-col md:justify-center md:items-center md:space-y-10">
-                    <div className="w-screen flex justify-start px-16 border border-red">
+                    <div className="w-screen flex justify-start px-16">
                         <h2 className="flex flex-col items-start">
                             <span className="font-bold text-[40px]">Expertise</span>
                             <span className="text-[32px] opacity-70">What Are My Skills ?</span>
                         </h2>
                     </div>
-                    <div className="w-screen flex justify-around px-16 border border-red">
+                    <div className="w-screen flex justify-around px-16">
                         <div className="group w-96 h-96 [perspective:1000px]">
                             <div className="relative w-full h-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                 <div className={`absolute inset-0 space-y-4 rounded-xl flex flex-col items-center justify-center bg-[url('/shape.svg')] bg-no-repeat bg-primary/25`}>
