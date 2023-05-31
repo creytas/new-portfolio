@@ -107,15 +107,15 @@ const Landing = ({isLight})=>{
                             <span className="text-[32px] opacity-70">What Are My Skills ?</span>
                         </h2>
                     </div>
-                    <div className="w-screen flex px-16 border border-red">
+                    <div className="w-screen flex justify-around px-16 border border-red">
                         <div className="group w-96 h-96 [perspective:1000px]">
                             <div className="relative w-full h-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                                <div className={`absolute inset-0 space-y-4 rounded-xl flex flex-col items-center justify-center bg-[url('/shape.svg')] bg-primary/25`}>
-                                    <Icon icon="tabler:device-imac-cog" className="border w-[35%] h-[35%] text-white" />
-                                    <h3 className="border text-2xl text-white font-extrabold">UI/UX design</h3>
+                                <div className={`absolute inset-0 space-y-4 rounded-xl flex flex-col items-center justify-center bg-[url('/shape.svg')] bg-no-repeat bg-primary/25`}>
+                                    <Icon icon="tabler:device-imac-cog" className="w-[35%] h-[35%] text-white" />
+                                    <h3 className="text-2xl text-primary font-extrabold">UI/UX design</h3>
                                 </div>
                                 <div className="absolute inset-0 w-full h-full rounded-xl bg-white px-12 flex flex-col items-center justify-center text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                                    <h3 className="border">UI/UX design</h3>
+                                    <h3 className="font-bold text-xl text-primary">UI/UX design</h3>
                                     <div className="w-full flex flex-wrap">
                                         <Skill icon="akar-icons:html-fill" iconColor="#E44D26" skill="HTML" level="Advanced" />
                                         <Skill icon="fa-brands:react" iconColor="#00D8FF" skill="React" level="Intermediate" />
@@ -131,6 +131,40 @@ const Landing = ({isLight})=>{
                                 </div>
                             </div>
                         </div>
+                        <div className="group w-96 h-96 [perspective:1000px]">
+                            <div className="relative w-full h-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                <div className={`absolute inset-0 space-y-4 rounded-xl flex flex-col items-center justify-center bg-[url('/shape.svg')] bg-no-repeat bg-primary/25`}>
+                                    <Icon icon="tabler:server-cog" className="w-[35%] h-[35%] text-white" />
+                                    <h3 className="text-2xl text-primary font-extrabold">Backend</h3>
+                                </div>
+                                <div className="absolute inset-0 w-full h-full rounded-xl bg-white px-12 flex flex-col items-center justify-center text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                                    <h3 className="font-bold text-xl text-primary">Backend</h3>
+                                    <div className="w-full flex flex-wrap">
+                                        <Skill icon="vscode-icons:file-type-node" iconColor="#83CD29" skill="Node Js" level="Intermediate" />
+                                        <Skill icon="logos:docker-icon" iconColor="#2396ED" skill="Docker" level="Basic" />
+                                        <Skill icon="vscode-icons:file-type-firebase" iconColor="#EEAB37, #F4BD62, #F6820C, #FCCA3F, #FDE068, #FFA50E, #FFA712, #FFC24A" skill="Firebase" level="Basic" />
+                                        <Skill icon="logos:strapi-icon" iconColor="#8E75FF" skill="Strapi" level="Basic" />
+                                        <Skill icon="vscode-icons:file-type-mysql" iconColor="#00758F, #5D87A1" skill="MySQL" level="Advanced" />
+                                        <Skill icon="vscode-icons:file-type-mongo" iconColor="##41A247, #4BA74B, #67B554, #69B655" skill="MongoDB" level="Intermediate" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="group w-96 h-96 [perspective:1000px]">
+                            <div className="relative w-full h-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                <div className={`absolute inset-0 space-y-4 rounded-xl flex flex-col items-center justify-center bg-[url('/shape.svg')] bg-no-repeat bg-primary/25`}>
+                                    <Icon icon="tabler:calendar-cog" className="w-[35%] h-[35%] text-white" />
+                                    <h3 className="text-2xl text-primary font-extrabold">Project management</h3>
+                                </div>
+                                <div className="absolute inset-0 w-full h-full rounded-xl bg-white px-12 flex flex-col items-center justify-center text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                                    <h3 className="font-bold text-xl text-primary">Project management</h3>
+                                    <div className="w-full flex flex-wrap">
+                                        <Skill icon="logos:asana-icon" iconColor="#F06A6A" skill="Asana" level="Intermediate" />
+                                        <Skill icon="logos:trello" iconColor="#FFFFFF, #0091E6, #0079BF" skill="Trello" level="Intermediate" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                                
                     </div>
 
                 </div>
