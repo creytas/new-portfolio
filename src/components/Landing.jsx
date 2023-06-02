@@ -15,7 +15,8 @@ const Landing = ({isLight})=>{
     return(
         <section className="w-screen px-4 md:px-0">
             <div className="w-full flex flex-col justify-center items-center space-y-4">
-                <div className="w-full flex flex-col items-center space-y-4  md:flex-row-reverse md:justify-center">
+                <div className="hidden md:w-screen md:flex md:bg-left  md:h-[304px] md:bg-[url('/headerMdBg.svg')] bg-no-repeat"></div>
+                <div className="w-full flex flex-col items-center space-y-4  md:flex-row-reverse md:justify-center md:mt-40">
                     <div className="w-[65%] flex items-center justify-center md:w-[271px] md:ml-8">
                         <Image src="/profile_picture_1.png" alt="randy buhendwa's picture" width={560} height={560} loading="lazy"/>
                     </div>
