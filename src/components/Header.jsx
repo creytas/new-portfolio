@@ -7,7 +7,7 @@ const HeaderBar = ({isLight, setIsLight}) =>{
             <div className="w-1/4 h-[95px] bg-[url('/headerSmBg.svg')] md:hidden bg-no-repeat ">
 
             </div>
-            <div className={`w-3/4 md:w-screen min-h-[74px] flex justify-end md:items-start p-4 md:pr-16 md:fixed ${isLight ? "md:bg-secondary/70" : "md:bg-alt-navy/70"} md:z-20`}>
+            <div className={`w-3/4 md:w-screen min-h-[74px] flex justify-end md:items-start p-4 md:pr-16 md:fixed ${isLight ? "md:bg-secondary/70 md:hover:bg-secondary" : "md:bg-alt-navy/70 md:hover:bg-navy"} md:z-20`}>
                 <div className="w-full flex items-center justify-end">
                     <div className="hidden md:flex md:mr-12 md:space-x-12">
                         <span className="flex items-center hover:text-primary"><Icon icon="bx:home-smile" className="w-[30px] h-[30px] mr-1" /> Home</span>
