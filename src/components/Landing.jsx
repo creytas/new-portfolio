@@ -128,6 +128,7 @@ const Landing = ({isLight})=>{
                                         <Skill icon="logos:figma" iconColor="" skill="Figma" level="Intermediate" />
                                         <Skill icon="devicon:tailwindcss" iconColor="#38BDF8" skill="Tailwind" level="Intermediate" />
                                         <Skill icon="simple-icons:mui" iconColor="#007FFF" skill="MUI" level="intermediate" />
+                                        <Skill icon="skill-icons:wordpress" iconColor="" skill="WordPress" level="intermediate" />
                                     </div>
                                 </div>
                             </div>
@@ -214,6 +215,7 @@ const Landing = ({isLight})=>{
                                         <Skill icon="logos:figma" iconColor="" skill="Figma" level="Intermediate" />
                                         <Skill icon="devicon:tailwindcss" iconColor="#38BDF8" skill="Tailwind" level="Intermediate" />
                                         <Skill icon="simple-icons:mui" iconColor="#007FFF" skill="MUI" level="intermediate" />
+                                        
                                     </div>
                                 </div>
                                 <div className="w-full py-2 px-4 flex flex-col items-center justify-center">
